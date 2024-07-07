@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+ 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-family: 'Space Mono', monospace;
+  background-color: #e5dafe;
+}
+header {
+    background-color:#22176b;
+    color:#895cee;
+    text-align:center;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+.container {
+  width: 1140px;
+  max-width: 100%;
+  margin: auto;
+}
+
+
+.clearfix {
+  overflow: hidden;
+}
+
+
+header li:hover{
+    background-color:#442e97;
+    border-radius: 5px;
+    border-width: 4px;
+    transition: 0.5s;
+    padding: 5px;
+}
+
+
+  #nav{
+    background-color: #22176b;
+    padding-top: 20px;
+    padding-bottom: 20px;
+   
+  }
+
+
+  #nav img{
+   padding: 15px;
+  }
+
+
+  #nav ul li {
+    list-style: none;
+    display: inline;
+    padding: 5px 0px;
+    margin: 0 5px;
+  }
+
+
+  #nav ul#menu li {
+    border-radius: 80px;
+   
+}
+
+
+#nav ul.right li {
+    float: right;
+}
+
+
+#nav ul li a{
+    padding-left: 15px;
+    padding-right: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+
+#nav ul#menu li.active {
+    background-color: #000040;
+}
+
+
+#nav ul#menu li:hover {
+    background-color: #442e97;
+    padding: 5px 5px 5px 5px;
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+
+
+img.img_menu{
+  width: 70px;
+  padding-top: 0px;
+  padding-right: 10px;
+}
+
+
+.lilas{
+  background-color:#e5dafe;
+}
+
+
+.banner {
+  position: relative;
+}
+
+
+.banner::before {
+  content: "";
+  background-image: url('img/fudositeinfo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+footer {
+  background-color: #22176b;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .card {
+      width: calc(50% - 20px);
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  .card {
+      width: 100%;
+  }
+}
+
+
+form {
+  padding: 20px;
+  overflow: hidden;
+}
+
+
+form fieldset {
+  border: 1px solid#22176b;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+
+form legend {
+  font-weight: bold;
+  color: #22176b;
+}
+
+.input-container {
+    margin-bottom: 10px;
+}
+
+
+.input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type=email] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #22176b;
+  border-radius: 4px;
+  color: #895cee;
+}
+
+
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid#22176b;
+    border-radius: 4px;
+  }
+
+
+  button {
+    background-color:#22176b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    cursor: pointer; /* Adiciona um cursor de ponteiro */
+  }
+ 
+  /* Botão de Limpar */
+  button[type="reset"] {
+    background-color: #22176b;
+  }
+ 
+  /* Botão de Enviar */
+  button:hover {
+    background-color: #6645c2;
+  }
+
+
+  #inicio {
+    padding: 40px;
+    text-align: center;
+  }
+
+
+
+
+  [class*="col-"] {
+    float: left;
+    padding-right: 10px;
+}
+
+
+section {padding-bottom: 25px;}
+blockquote, p, hr {margin-bottom: 10px;}
+
+
+#inicio h1, h3{
+  padding: 10px;
+}
+
+
+.col-1 { width: 8.33%; }
+.col-2 { width: 16.66%;}
+.col-3 { width: 25% }
+.col-4 { width: 33.33% }
+.col-5 { width: 41.66% }
+.col-6 { width: 50% }
+.col-7 { width: 58.33% }
+.col-8 { width: 66.66% }
+.col-9 { width: 75% }
+.col-10 { width: 83.33% }
+.col-11 { width: 91.66% }
+.col-12 { width: 100% }
+
+
+#apoiadores {
+  text-align: center;
+  padding: 40px;
+}
+
+
+#apoiadores h1:hover{
+  transform: scale(1.5);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
+
+.a img:hover{
+  transform: scale(1.1);
+}
+
+
+.saibamais button {
+  background-color: #442e97;
+  color:#fff;
+  border: none;
+  padding: 7px 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.saibamais a{
+  color: #e5dafe;
+  text-decoration: none;
+}
+
+
+.saibamais button:hover{
+  background-color: #895cee;
+  transform: scale(1.1);
+}
+
+
+img.img_ajuste{
+  padding: 15px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0 ;
+  padding-top: 15px;
+}
+
+
+.maratona{
+  padding: 30px;
+  text-align: center;
+}  
+
+
+.fundo_maratona{
+  height: 230px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}  
+
+
+.fundo_maratona::before {
+  content: "";
+  background-image: url('img/programação.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+.maratona button {
+  background-color: #442e97;
+  color:#fff;
+  border: none;
+  padding: 7px 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+
+.maratona a{
+  color: #e5dafe;
+  text-decoration: none;
+}
+
+
+.maratona button:hover{
+  background-color: #895cee;
+  transform: scale(1.1);
+}
+
+
+.jogos button {
+  background-color: #442e97;
+  color:#fff;
+  border: none;
+  padding: 7px 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+
+.jogos a{
+  color: #e5dafe;
+  text-decoration: none;
+}
+
+
+.jogos button:hover{
+  background-color: #895cee;
+  transform: scale(1.1);
+}
+
+
+.fundo_league{
+  height: 240px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}  
+
+
+.fundo_league::before {
+  content: "";
+  background-image: url('img/league.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+.fundo_valorant{
+  height: 230px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}  
+
+
+.fundo_valorant::before {
+  content: "";
+  background-image: url('img/valorant.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+.fundo_freefire{
+  height: 230px;
+  padding: 40px;
+  text-align: center;
+  position: relative;
+}  
+
+
+.fundo_freefire::before {
+  content: "";
+  background-image: url('img/freefire.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  position: absolute;
+  opacity: 0.4;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+
+.fotos button {
+  background-color: #442e97;
+  color:#fff;
+  border: none;
+  padding: 7px 14px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.5s ease;
+}
+
+
+.fotos a{
+  color: #e5dafe;
+  text-decoration: none;
+}
+
+
+.fotos button:hover{
+  background-color: #895cee;
+  transform: scale(1.1);
+}
+
+
+img.img_parceiros{
+  width: 250px;
+}
+
+
+#parceiros h1 {
+ color: black;
+ padding-top: 25px;
+ padding-bottom: 15px;
+}
+
+
+#parceiros p{
+  color: black;
+  padding-top: 40px;
+  padding-left: 20px;
+  padding-right: 70px;
+  padding-bottom: 0px;
+
+
+}
+
+
+#parceiros i{
+  color: black;
+  padding-top: 0px;
+}
+
+
+#parceiros a{
+  color: black;
+  text-decoration: none;
+}
+
+
+#parceiros h1:hover{
+  transform: scale(1.5);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
+
+button.parceiros{
+  background-color: #8b66e2;
+}
+
+
+button.parceiros:hover{
+  background-color: #6645c2;
+  border-radius: 50px;
+  border: 1px;
+  transition: 0.5s;
+
+
+}
+
+
+.logo img{
+  max-width: 100px;
+  height: auto;
+  justify-content: space-between;
+  display: flex;
+  padding: 10px;
+}
+
+
+.logo img:hover{
+  transform: scale(1.4);
+  transition: 500ms linear;
+}
+
+
+.col-4 img:hover{
+  transform: scale(1.1);
+  transition: 500ms linear;
+}
+
+
+.col-3 img:hover{
+  transform: scale(1.2);
+  transition: 500ms linear;
+}
+
+
+.card {
+  text-align:justify;
+  width: calc(33.33% - 10px);
+  height: 250px;
+  width: 1200px;
+  margin: 15px;
+  padding: 15px;
+  background-color: #8b66e2;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  float: left;
+  color: #8369c9;
+}
+
+
+.card img {
+  padding-top: 15px;
+  margin-bottom: 12px;
+}
+#programação{
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+
+#programação h1 {
+  color: black;
+  padding-top: 25px;
+  padding-bottom: 25px;
+ }
+
+
+#programação h2{
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+ 
+ #programação p{
+   color: black;
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 70px;
+ 
+ }
+
+
+ #programação h1:hover{
+   transform: scale(1.4);
+   transition: 500ms linear;
+   color: #22176b;
+ }
+ #programação h2:hover{
+  transform: scale(1.3);
+  transition: 500ms linear;
+  color: #22176b;
+}
+#programação h3:hover{
+  transform: scale(1.3);
+  transition: 500ms linear;
+  color: #22176b;
+}
+#programação p:hover{
+  transform: scale(1.2);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
+
+ button.programação{
+   background-color: #8b66e2;
+ }
+ 
+ button.programação:hover{
+   background-color: #6645c2;
+   border-radius: 50px;
+   border: 1px;
+   transition: 500ms linear;
+   transform: scale(1.3);
+ 
+ }
+
+
+ .jogos {
+  text-align: center;
+  padding: 40px;
+ }
+
+
+ 
+#cronograma {
+  text-align: center;
+}
+#cronograma h1 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+
+.XXIIIout{
+ text-align: center;
+ color: #fff;
+}
+
+
+.XXIVout{
+  text-align: center;
+  color: #fff;
+ }
+
+
+#cronograma table-responsive{
+  width: 100% !important;
+}
+
+
+#cronograma table {
+    width: 50% !important; /*Importante manter o !important rs */
+    margin: auto;
+    border-spacing: 10px;
+}
+
+
+#cronograma table-status {
+    margin-top: 20px;
+    margin-bottom: 20px !important;
+}
+
+
+#cronograma h1:hover{
+  transform: scale(1.2);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
+
+#cronograma h2:hover{
+  transform: scale(1.2);
+  transition: 500ms linear;
+  color: #22176b;
+}
+
+
+.cardcronogramaXXIII{
+    width: 1200px;
+    height: 600px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #895cee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.5, 0.5);
+    text-align: center;
+}
+
+
+.cardcronogramaXXIV{
+    width: 1200px;
+    height: 830px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #895cee;
+    box-shadow: 0 2px 4px rgba(0, 0, 0.5, 0.5);
+    text-align: center;
+}
